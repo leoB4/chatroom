@@ -74,8 +74,9 @@ export default {
                 }
 
                 .message_user{
-                    background-color: rgba($colGray,0.5);
+                    background-color: rgba($colGray,0.2);
                     text-align: right;
+
                 }
 
             }

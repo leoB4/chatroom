@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img src="../assets/CristalB.svg" alt="">
     <form @submit.prevent="onSubmit">
       <input type="text" v-model="username" />
       <button>connect</button>

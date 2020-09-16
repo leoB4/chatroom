@@ -17,6 +17,7 @@ export default {
   methods: {
     onSubmit () {
       this.$emit('sendMessage', this.message)
+      this.message = ''
     }
   }
 }
