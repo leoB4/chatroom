@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;}
-	.st1{display:inline;fill:#FFFFFF;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
-	.st2{stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
-	.st4{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-</style>
-<g class="st0">
-	<path class="st1" d="M639.39,295.98c0,0,0-145.53,0-227.7c0-0.18,0.05-0.19,0-0.01c-13.37,50.28-53.56,199.58-53.56,199.58
-		L639.39,295.98l55.03-28.14c0,0-41.2-149.93-55.03-199.9c-0.02-0.06,0,0.33,0,0.01C639.39,67.94,639.39,295.98,639.39,295.98"/>
-</g>
-<g>
-	<g>
-		<polyline class="st2" points="639.65,731.53 639.65,731.53 593.48,488.17 687.3,488.17 639.65,731.53 		"/>
-	</g>
-	<line class="st3" x1="639.65" y1="517.18" x2="639.65" y2="730.53"/>
-	<path class="st4" d="M639.65,487.17"/>
-	<path class="st2" d="M686.32,487.28l-46.66,29.9c-0.05,0.04,0.05,0.08,0,0.04l-46.67-29.94c-0.09-0.07-0.03,0,0.08,0l46.59-31.69
-		l46.58,31.69C686.35,487.28,686.4,487.2,686.32,487.28z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 98 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="Plan-de-travail2" serif:id="Plan de travail2" transform="matrix(1,0,0,0.949458,-564.491,-201.44)">
+        <rect x="564.491" y="212.163" width="97.017" height="288.965" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="564.491" y="212.163" width="97.017" height="288.965"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1,0,0,1.05323,-26.5086,-266.641)">
+                <g>
+                    <path d="M639.65,731.53L593.48,488.17L687.3,488.17L639.65,731.53" style="fill-rule:nonzero;stroke:white;stroke-width:0.5px;"/>
+                </g>
+                <path d="M639.65,517.18L639.65,730.53" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:0.5px;"/>
+                <path d="M686.32,487.28L639.66,517.18C639.61,517.22 639.71,517.26 639.66,517.22L592.99,487.28C592.9,487.21 592.96,487.28 593.07,487.28L639.66,455.59L686.24,487.28C686.35,487.28 686.4,487.2 686.32,487.28Z" style="fill-rule:nonzero;stroke:white;stroke-width:0.5px;"/>
+            </g>
+        </g>
+    </g>
 </svg>
