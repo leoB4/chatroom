@@ -92,7 +92,7 @@ export default {
 
                     input{
                         height: 59px;
-                        width: 100%;
+                        width: 95%;
                         padding: 0;
                         margin: 0;
                         border: none;
