@@ -152,12 +152,15 @@ export default {
         height: 40px;
         border: none;
         text-align: center;
+        color: $colBlack;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
 
         &::placeholder{
           text-align: center;
           font-weight: 700;
           font-style: italic;
-          color: $colBlack;
+          color: $colGray;
         }
       }
       button{
