@@ -1,6 +1,6 @@
 <template>
     <li v-bind:class = "(isCurrentUser)?'message_user':'message_other'">
-        <span class="user_name"> {{message.user.username}} </span>
+        <span class="user_name"> {{message.user.username}} :</span>
         <span class="user_message"><p>>..{{ message.text}}</p></span>
     </li>
 </template>

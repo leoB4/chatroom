@@ -2,6 +2,11 @@
     <div class="content">
         <UsersList :users="store.users" class="content_userList"/>
         <div class="content_message">
+            <div class="title_chat">
+                <p>
+                    tchat_window_
+                </p>
+            </div>
             <MessagesList :messages="store.messages"/>
             <MessageBox @sendMessage="onSendMessage"/>
         </div>
@@ -54,6 +59,26 @@ export default {
             width: 80%;
             height: 100%;
             background-color: $colBlack;
+            position: relative;
+
+            .title_chat{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                border-bottom: 1px solid $colWhite;
+                background-color: $colBlack;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-family: 'Press Start 2P', cursive;
+
+                p{
+                    padding-left: 40px;
+                    width: 100%;
+                    color: $colWhite;
+                }
+            }
 
             ul{
                 height: calc(100% - 60px);
@@ -68,8 +93,9 @@ export default {
 
                     .user_name{
                         display: block;
-                        font-weight: 700;
+                        font-size: 18px;
                         margin: 15px;
+                        font-family: 'Press Start 2P', cursive;
                     }
                 }
 
@@ -108,11 +134,21 @@ export default {
                 button{
                     position: absolute;
                     top: 50%;
-                    right: 5%;
+                    right: -5%;
                     transform: translate(-50%,-50%);
                     border: none;
                     background: transparent;
-                    color: $colWhite;
+                    background-image: url('../assets/envoyer.svg');
+                    background-position: center;
+                    background-size: cover;
+                    width: 50px;
+                    height: 25px;
+                    cursor: pointer;
+                    transition: .3s  ease-in-out;
+
+                    &:hover{
+                        transform: translate(-50%,-50%) scale(0.8);
+                    }
                 }
             }
         }
@@ -126,11 +162,55 @@ export default {
         width: 20%;
         height: 100%;
         background-color: $colWhite;
+        position: relative;
 
-        li{
-            margin: 15px 25px;
-
+        .title_user{
+            height: 60px;
+            width: 20%;
+            background: $colWhite;
+            border-bottom: 1px solid $colBlack;
+            display: flex;
+            padding-left: 40px;
+            position: fixed;
+            font-family: 'Press Start 2P', cursive;
         }
+        .scroll_user{
+            padding-top: 60px;
+            height: calc(100vh - 120px);
+            overflow-y: scroll;
+
+            .profil_user{
+                margin: 20px;
+
+                .profil_crystal{
+                    width: auto;
+                    height: 60px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                li{
+                    margin: 15px 25px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: 'Press Start 2P', cursive;
+                    font-size: 18px;
+
+                }
+            }
+        }
+        .stop_scroll{
+            height: 59px;
+            width: 20%;
+            background: $colWhite;
+            bottom: 0;
+            z-index: 10;
+            position: fixed;
+            border-top: 1px solid $colBlack;
+        }
+    }
+
+    body{
+        background-color: #000;
     }
 
 </style>

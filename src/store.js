@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import io from 'socket.io-client'
 import router from './router'
+import jaune from './assets/jaune.mp3'
 
 const socket = new io('https://bddi-2019-chat.herokuapp.com/')
 
@@ -10,7 +11,8 @@ const store = new Vue({
     error: [],
     user: {},
     users: [],
-    messages: []
+    messages: [],
+    soundJaune: new Audio(jaune)
   },
   watch: {
     isRegistered (registered) {
@@ -51,6 +53,19 @@ const store = new Vue({
       socket.on('message new', ({ message }) => {
         this.messages.push(message)
       })
+      socket.on('command new', (data) => {
+        switch (data.command) {
+          case 'jaune':
+            this.playJaune()
+            break
+          case 'jauneStop':
+            this.stopJaune()
+            break
+          case 'cristal':
+            this.cristal()
+            break
+        }
+      })
       socket.on('chat error', (error) => {
         console.log('chat error', error.message)
       })
@@ -69,6 +84,15 @@ const store = new Vue({
       socket.disconnect()
       this.isRegistered = false
       router.push('/login')
+    },
+    playJaune () {
+      this.$data.soundJaune.play()
+    },
+    stopJaune () {
+      this.$data.soundJaune.pause()
+    },
+    cristal () {
+
     }
   },
   created () {

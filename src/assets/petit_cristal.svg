@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 33.5 62.2" style="enable-background:new 0 0 33.5 62.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<polyline points="16.7,62.2 16.7,62.2 2.8,36.2 30.9,36.2 16.7,62.2 			"/>
+		</g>
+		<line class="st0" x1="16.7" y1="44.8" x2="16.7" y2="61.9"/>
+		<path class="st1" d="M16.7,35.9"/>
+		<path class="st2" d="M30.6,35.9l-14,8.9c0,0,0,0,0,0l-14-9c0,0,0,0,0,0l13.9-9.5L30.6,35.9C30.6,35.9,30.6,35.9,30.6,35.9z"/>
+	</g>
+	<circle cx="16.8" cy="28.6" r="9"/>
+	<g>
+		<path class="st3" d="M16.6,25.5c0,0,0-0.3,0-24.9c0,0,0,0,0,0c-11.5,11.9-16,16.5-16,16.5L16.6,25.5L33,17.1L16.6,0.5
+			c0,0,0,0.1,0,0C16.6,0.5,16.6,25.5,16.6,25.5"/>
+	</g>
+</g>
+</svg>
