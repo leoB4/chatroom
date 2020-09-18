@@ -4,7 +4,6 @@
             v-for="(message,i) in messages"
             :key="i"
             :message="message"/>
-        <canvas v-if="isCristal"></canvas>
     </ul>
 </template>
 

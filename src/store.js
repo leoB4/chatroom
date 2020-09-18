@@ -3,6 +3,7 @@ import io from 'socket.io-client'
 import router from './router'
 import jaune from './assets/jaune.mp3'
 
+
 const socket = new io('https://bddi-2019-chat.herokuapp.com/')
 
 const store = new Vue({
@@ -92,7 +93,7 @@ const store = new Vue({
       this.$data.soundJaune.pause()
     },
     cristal () {
-
+      this.$emit('command', 'cristal')
     }
   },
   created () {

@@ -1,6 +1,7 @@
 <template>
     <div class="content">
         <UsersList :users="store.users" class="content_userList"/>
+        <Canvas ref="canvas" />
         <div class="content_message">
             <div class="title_chat">
                 <p>
@@ -17,6 +18,7 @@
 import MessageBox from '../components/MessageBox.vue'
 import MessagesList from '../components/MessagesList.vue'
 import UsersList from '../components/UsersList.vue'
+import Canvas from '../components/Canvas.vue'
 
 import store from '../store'
 
@@ -34,7 +36,15 @@ export default {
   components: {
     MessageBox,
     MessagesList,
-    UsersList
+    UsersList,
+    Canvas
+  },
+  mounted(){
+      store.$on('command', (cmd) =>{
+        if(cmd === 'cristal'){
+            this.$refs.canvas.draw()
+        }
+      })
   }
 }
 </script>
@@ -97,6 +107,13 @@ export default {
                         margin: 15px;
                         font-family: 'Press Start 2P', cursive;
                     }
+
+                    .user_message{
+                        p{
+                            margin: 0 25px;
+                        }
+                    }
+                
                 }
 
                 .message_user{

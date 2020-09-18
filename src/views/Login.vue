@@ -37,7 +37,7 @@ export default {
   },
   mounted () {
     const scene = this.$refs.wrapper
-    const parallaxInstance = new Parallax(scene, {relativeInput: true})
+    const parallaxInstance = new Parallax(scene, { relativeInput: true })
     scene.style.width = '100vw'
     scene.style.height = '100vh'
 
